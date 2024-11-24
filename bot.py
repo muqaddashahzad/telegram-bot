@@ -1,5 +1,7 @@
 from telegram import Update
-from telegram.ext import Updater, MessageHandler, Filters, CallbackContext
+from telegram.ext import Application, MessageHandler, CallbackContext
+from telegram.ext.filters import Filters  # Correct import path
+
 
 # Function to handle notifications (join/leave messages)
 def handle_notifications(update: Update, context: CallbackContext):
